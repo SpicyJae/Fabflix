@@ -1,0 +1,1 @@
+We did not use LIKE predicate, instead we used REGEXP.

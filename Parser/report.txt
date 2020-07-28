@@ -1,0 +1,5 @@
+At the first time, I tried to insert data using the stored procedure, but it took too much time even with batch insert. Therefore, I inserted data using simple queries. Also, to increase the execution speed and decrease the amount of time accessing to database, I gathered all necessary information like existing movie information and stored them in HashMap structure. Originally It took more than 15 minutes, but after changing the insertion method, it took like a sec.
+
+Main: 16810 ms
+Actor: 5134 ms
+Cast: 17028 ms

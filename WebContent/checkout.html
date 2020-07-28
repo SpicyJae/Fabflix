@@ -1,0 +1,60 @@
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>FabFlix > Customer Info</title>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="box"></div>
+		<a href="index.html"><i class="fa fa-home"></i></a>
+		<a href="search.html"><i class="fa fa-search"></i></a>
+		<a href="shopping-cart.html?status=Load"><i class="fa fa-shopping-cart"></i></a>
+		<a href="checkout.html"><i class="fa fa-dollar"></i></a>
+	</div>
+	<div class="main">
+		<div class="nav">
+			<input type="text" placeholder="Search a movie by title..." required>
+		</div>
+		<div class="main-container">
+		<h1>Checkout</h1>
+			<div class="error-message" id="error_message"></div>
+			<div class="main-box">
+				<form id="customer_form" method="post" action="api/checkout">
+					<div>
+						<label>First Name:</label>
+						<input type="text" name="firstname" autocomplete="off" required>
+					</div>
+					<div>
+						<label>Last Name:</label>
+						<input type="text" name="lastname" autocomplete="off" required>
+					</div>
+					<div>
+						<label>Credit Card:</label>
+						<input type="text" name="ccId" autocomplete="off" required>
+					</div>
+					<div>
+						<label>Expiration Date:</label>
+						<input type="date" name="date" autocomplete="off" required>
+					</div>
+					<input type="submit" name="" value="Submit">
+					<div class="gap"></div>
+					<div class="g-recaptcha" data-sitekey="6Ld7HpEUAAAAABKVr1JWCSo-tCT3-ExtHdaq2qKo"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="./checkout.js"></script>
+
+</body>
+</html>

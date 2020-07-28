@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #92CDCF;
+}
+
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: #FFFFFF;
+	padding: 40px;
+	box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.login-box h2 {
+	margin: 0 0 40px;
+	padding: 0;
+	color: #92CDCF;
+	text-transform: uppercase;
+}
+
+.login-box input {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px 0;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #EEEFF7;
+	border-radius: 27px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.login-box input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	background: #92CDCF;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.login-box form div {
+	position: relative;
+}
+
+.login-box form div label {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #EEEFF7;
+	transition: 0.4s;
+	pointer-events: none;
+}
+
+.login-box input:focus ~ label, .login-box input:valid ~ label {
+	top: -10px;
+	left: 20px;
+	color: #92CDCF;
+	font-size: 12px;
+	text-shadow: -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF,
+		-1px -1px 0 #FFFFFF;
+}
+
+.login-box input:focus, .login-box input:valid {
+	border: 1px solid #92CDCF;
+}
+
+.error-message {
+	color: #FFFFFF;
+	font-size: 24px;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.g-recaptcha {
+	display: inline-block;
+}

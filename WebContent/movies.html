@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>FabFlix > Movies</title>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="box"></div>
+		<a href="index.html"><i class="fa fa-home"></i></a>
+		<a href="search.html"><i class="fa fa-search"></i></a>
+		<a href="shopping-cart.html?status=Load"><i class="fa fa-shopping-cart"></i></a>
+		<a href="checkout.html"><i class="fa fa-dollar"></i></a>
+	</div>
+	<div class="main">
+		<div class="nav">
+			<!--<input type="text" placeholder="Search a movie by title..." required>-->
+		</div>
+		<div class="main-container">
+			<h1>Movie List</h1>
+			<div class="list-select">
+				<ul>
+					<li><a id="genre-btn">Browse by Genre</a></li>
+					<li><a id="title-btn">Browse by Title</a></li>
+				</ul>
+			</div>
+			<span class="target"></span>
+			
+			<div id="genre-modal" class="modal">
+				<div class="modal-content">
+					<div class="close genre-close">&times;</div>
+					<h2>Genre List</h2>
+					<div id="genre-list"></div>
+				</div>
+			</div>
+			<div id="title-modal" class="modal">
+				<div class="modal-content">
+					<div class="close title-close">&times;</div>
+					<h2>Title Starts With</h2>
+					<div id="title-list"></div>
+				</div>
+			</div>
+			<div class="movie">
+				<div class="option">
+					<span id="title-asc"></span>
+					<span id="title-desc"></span>
+					<span id="rate-asc"></span>
+					<span id="rate-desc"></span>
+				</div>
+				<div id="movie-list"></div>
+				<div id="prev-btn"></div>
+				<div id="next-btn"></div>
+			</div>
+			<div class="pagination">
+				<span>Results Per Page:</span>
+				<span id="result-page"></span>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="movies.js"></script>
+</body>
+</html>

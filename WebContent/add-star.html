@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>FabFlix > Add a New Star</title>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="box"></div>
+		<a href="dashboard.html"><i class="fa fa-home"></i></a>
+		<a href="add-star.html"><i class="fa fa-star"></i></a>
+		<a href="add-movie.html"><i class="fa fa-film"></i></a>
+		<a href="metadata.html"><i class="fa fa-database"></i></a>
+	</div>
+	<div class="main">
+		<div class="nav">
+		</div>
+		<div class="main-container">
+			<h1>Add a New Star</h1>
+			<div class="main-box">
+				<form id="star-form" method="get" action="api/add-star">
+					<div>
+						<label>Star Name (Required):</label>
+						<input type="text" name="name" autocomplete="off" required>
+					</div>
+					<div>
+						<label>Birth Year (Optional):</label>
+						<input type="text" name="birthYear" autocomplete="off">
+					</div>
+					<input type="submit" name="" value="Submit">
+				</form>
+				<div id="result-message"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="add-star.js"></script>
+</body>
+</html>

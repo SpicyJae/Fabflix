@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="single-style.css">
+<title>FabFlix > Single Movie</title>
+</head>
+<body>
+	<div class="vertical-center">
+		<div class="single-container">
+					<div class="single-title">
+						<h1 id="movieTitle"></h1>
+			</div>
+			<div class="single-body">
+				<div class="single-info">
+					<div class="row">
+						<div class="col">
+							<ul id="movieInfo"></ul>
+							<h1 id="movieRating"></h1>
+							<p id="movieGenre"></p>
+						</div>
+						<div class="col">
+							<ul id="starList"><li>Stars:</li></ul>
+						</div>
+					</div>
+					<p id="add-item"></p>
+					<p><a href="index.html">Back to Movie List</a></p>
+					<p><a href="shopping-cart.html?status=Load">Go to Shopping Cart</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Load jQuery and Bootstrap JS -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Load our own JS file -->
+	<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+	<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+	<script src="single-movie.js"></script>
+</body>
+</html>
