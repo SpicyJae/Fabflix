@@ -2,15 +2,7 @@ Collaborated with Yi Fang to create a e-commerce movie database website Fabflix 
 
 Technologies used:
 
-Java
-MySQL (JDBC)
-JSP
-Java Servlet
-HTML
-XML
-Amazon Web Services (AWS)
-Apache Tomcat
-Recaptcha
+Java, MySQL (JDBC), JSP, Java Servlet, HTML, XML, Amazon Web Services (AWS), Apache Tomcat, Google Recaptcha
 
 In the website the user can do a secure login using an email, password, and recaptcha for authentication. From there the user can either search or browse for movies on the home page.
 
